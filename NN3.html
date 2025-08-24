@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+<title>Match Number names</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+</head>
+<body><div class="header"><img src="images/logoo.png" alt="Tutoring Simplified logo" style="height: 150px;" /></div>
+<div class="topnav">
+  <div class="topnav-left">
+    <a href="index.html" class="active">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Worksheet Generator</button>
+      <div class="dropdown-content">
+        <a href="englishW.html">English</a>
+        <a href="mathsW.html">Mathematics</a>
+        <a href="arabicW.html">Arabic</a>
+        <a href="urduW.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Activity Generator</button>
+      <div class="dropdown-content">
+        <a href="englishA.html">English</a>
+        <a href="mathsA.html">Mathematics</a>
+        <a href="arabicA.html">Arabic</a>
+        <a href="urduA.html">Urdu</a>
+      </div>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropbtn">Quiz Generator</button>
+      <div class="dropdown-content">
+        <a href="englishQ.html">English</a>
+        <a href="mathsQ.html">Mathematics</a>
+        <a href="arabicQ.html">Arabic</a>
+        <a href="urduQ.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Reader</button>
+      <div class="dropdown-content">
+        <a href="files/englishreader.pdf">English</a>
+        <a href="files/arabicreader.pdf">Arabic</a>
+        <a href="files/urdureader.pdf">Urdu</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="topnav-right">
+    <a href="#ContactUs">Contact Us</a>
+    <a href="FAQs.html">FAQs</a>
+  </div>
+</div>
+<h2 style="text-align: center;">DRAG AND DROP TO MATCH NUMBERS TO NAMES (21–30)</h2>
+
+<div class="container">
+  <table>
+    <tr>
+      <th>Number Name</th>
+      <th>Drop</th>
+      <th>Image</th>
+      <th>Number Name</th>
+      <th>Drop</th>
+      <th>Image</th>
+    </tr>
+
+    <tr>
+      <!-- Left: TWENTY-ONE -->
+      <td class="numbernames">TWENTY-ONE</td>
+      <td><div id="drop-twentyone" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-23" src="images/23.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+
+      <!-- Right: TWENTY-SIX -->
+      <td class="numbernames">TWENTY-SIX</td>
+      <td><div id="drop-twentysix" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-30" src="images/30.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+    </tr>
+
+    <tr>
+      <!-- Left: TWENTY-TWO -->
+      <td class="numbernames">TWENTY-TWO</td>
+      <td><div id="drop-twentytwo" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-27" src="images/25.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+
+      <!-- Right: TWENTY-SEVEN -->
+      <td class="numbernames">TWENTY-SEVEN</td>
+      <td><div id="drop-twentyseven" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-22" src="images/29.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+    </tr>
+
+    <tr>
+      <!-- Left: TWENTY-THREE -->
+      <td class="numbernames">TWENTY-THREE</td>
+      <td><div id="drop-twentythree" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-25" src="images/22.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+
+      <!-- Right: TWENTY-EIGHT -->
+      <td class="numbernames">TWENTY-EIGHT</td>
+      <td><div id="drop-twentyeight" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-29" src="images/27.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+    </tr>
+
+    <tr>
+      <!-- Left: TWENTY-FOUR -->
+      <td class="numbernames">TWENTY-FOUR</td>
+      <td><div id="drop-twentyfour" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-26" src="images/21.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+
+      <!-- Right: TWENTY-NINE -->
+      <td class="numbernames">TWENTY-NINE</td>
+      <td><div id="drop-twentynine" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-28" src="images/28.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+    </tr>
+
+    <tr>
+      <!-- Left: TWENTY-FIVE -->
+      <td class="numbernames">TWENTY-FIVE</td>
+      <td><div id="drop-twentyfive" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-24" src="images/24.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+
+      <!-- Right: THIRTY -->
+      <td class="numbernames">THIRTY</td>
+      <td><div id="drop-thirty" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><img id="img-21" src="images/26.png" class="activity-img" draggable="true" ondragstart="drag(event)"></td>
+    </tr>
+  </table>
+</div>
+
+<!-- Footer -->
+  <div class="footer-basic">
+    <footer>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="index.html" class="fa fa-home"> Home</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="FAQs.html" class="fa fa-question-circle-o"> FAQs</a>
+        </li>
+        <li class="list-inline-item" id="ContactUs">
+          Contact Us:
+        </li>
+        <li class="list-inline-item">
+          <a href="mailto:tutoringsimplified101@gmail.com" class="fa fa-envelope-o"> Email</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/tutoringsimplified/" class="fa fa-instagram"> Instagram</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="tel:+971556703700" class="fa fa-phone"> Phone</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>

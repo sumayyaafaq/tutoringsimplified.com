@@ -1,0 +1,280 @@
+
+	/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+   padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+ background-color: #265DD1;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+footer {
+  position: bottom;
+  bottom: 0;
+  left: 0;
+  background-color: #F9A825;
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+ .footer-basic {
+      background-color: #F9A825;
+      padding: 20px 0;
+      text-align: center;
+	  color:black;
+    }
+
+    .footer-basic .list-inline {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .footer-basic .list-inline-item {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .footer-basic a {
+      color: black;
+	  opacity: 0.8;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .footer-basic a:hover {
+      text-decoration: underline;
+	  color: white;
+    }
+
+body {
+	  padding-bottom: 60px; /* same height or more than footer height */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header img {
+      display: block;
+      margin: 0 auto;
+      height: 180px;
+    }
+
+    .topnav {
+  overflow: visible;
+  background-color: #003399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* <-- changed from flex-start */
+  padding: 0 10px;
+  position: relative;
+  z-index: 10;
+}
+.topnav-left, .topnav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.topnav a, .dropbtn {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.topnav a:hover,
+.topnav .dropbtn:hover {
+  background-color: #265DD1;
+  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #003399;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 999; /* ensure it's on top */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+  }
+.dropdown-content a:hover {
+  background-color: #265DD1;
+}
+
+    .worksheet-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+      gap: 15px;
+      max-width: 400px;
+    }
+
+    .worksheet-buttons a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #0055cc;
+      border: 2px solid #003399;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .worksheet-buttons a:hover {
+      background-color: #003399;
+      color: white;
+    }
+
+    .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  direction: rtl;
+}
+.buttons-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .buttons-wrapper h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 15px;
+	  justify-content: center;
+      width: 100%;
+	  margin: 0 auto;
+      max-width: 1200px;
+      box-sizing: border-box;
+    }
+
+    .button {
+      display: block;
+      background-color: #0055cc;
+      color: white;
+      text-align: center;
+      padding: 14px 0;
+	  
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #003399;
+      color: white;
+    }
+
+    @media (max-width: 900px) {
+      .buttons {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .buttons {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 400px) {
+      .buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .capital-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .activity-img {
+    width: auto;
+    height: 50px;
+    cursor: grab;
+  }
+
+  .drop-zone {
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #aaa;
+    margin: auto;
+    border-radius: 6px;
+  }
+
+  .drop-zone.over {
+    border-color: #003399;
+  }
+.container {
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 8px;
+  }  
+.numbernames {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+  }

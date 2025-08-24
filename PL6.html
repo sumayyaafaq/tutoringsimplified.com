@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+<title>Match Pictures</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script> 
+</head>
+<body><div class="header"><img src="images/logoo.png" alt="Tutoring Simplified logo" style="height: 150px;" /></div>
+<div class="topnav">
+  <div class="topnav-left">
+    <a href="index.html" class="active">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Worksheet Generator</button>
+      <div class="dropdown-content">
+        <a href="englishW.html">English</a>
+        <a href="mathsW.html">Mathematics</a>
+        <a href="arabicW.html">Arabic</a>
+        <a href="urduW.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Activity Generator</button>
+      <div class="dropdown-content">
+        <a href="englishA.html">English</a>
+        <a href="mathsA.html">Mathematics</a>
+        <a href="arabicA.html">Arabic</a>
+        <a href="urduA.html">Urdu</a>
+      </div>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropbtn">Quiz Generator</button>
+      <div class="dropdown-content">
+        <a href="englishQ.html">English</a>
+        <a href="mathsQ.html">Mathematics</a>
+        <a href="arabicQ.html">Arabic</a>
+        <a href="urduQ.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Reader</button>
+      <div class="dropdown-content">
+        <a href="files/englishreader.pdf">English</a>
+        <a href="files/arabicreader.pdf">Arabic</a>
+        <a href="files/urdureader.pdf">Urdu</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="topnav-right">
+    <a href="#ContactUs">Contact Us</a>
+    <a href="FAQs.html">FAQs</a>
+  </div>
+</div>
+<h2 style="text-align: center;">DRAG AND DROP TO MATCH LETTERS WITH PICTURES</h2>
+
+<table align="center" style="width: 95%;">
+  <tr>
+    <td class="capital-text">A</td>
+    <td><div id="drop-A" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-A" src="images/dog.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">B</td>
+    <td><div id="drop-B" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-B" src="images/eye.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">C</td>
+    <td><div id="drop-C" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-C" src="images/fan.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">D</td>
+    <td><div id="drop-D" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-D" src="images/apple.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">E</td>
+    <td><div id="drop-E" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-E" src="images/ball.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">F</td>
+    <td><div id="drop-F" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-F" src="images/cat.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">G</td>
+    <td><div id="drop-G" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-G" src="images/joker.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">H</td>
+    <td><div id="drop-H" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-H" src="images/knife.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">I</td>
+    <td><div id="drop-I" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-I" src="images/lemon.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">J</td>
+    <td><div id="drop-J" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-J" src="images/giraffe.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">K</td>
+    <td><div id="drop-K" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-K" src="images/house.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">L</td>
+    <td><div id="drop-L" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-L" src="images/icecream.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">M</td>
+    <td><div id="drop-M" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-M" src="images/pigeon.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">N</td>
+    <td><div id="drop-N" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-N" src="images/queen.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">O</td>
+    <td><div id="drop-O" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-O" src="images/rose.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">P</td>
+    <td><div id="drop-P" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-P" src="images/monkey.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">Q</td>
+    <td><div id="drop-Q" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-Q" src="images/net.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">R</td>
+    <td><div id="drop-R" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-R" src="images/onion.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">S</td>
+    <td><div id="drop-S" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-S" src="images/yoyo.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">T</td>
+    <td><div id="drop-T" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-T" src="images/whale.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">U</td>
+    <td><div id="drop-U" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-U" src="images/xmas.jfif" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">V</td>
+    <td><div id="drop-V" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-V" src="images/sun.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">W</td>
+    <td><div id="drop-W" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-W" src="images/zebra.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">X</td>
+    <td><div id="drop-X" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-X" src="images/umbrella.png" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+
+  <tr>
+    <td class="capital-text">Y</td>
+    <td><div id="drop-Y" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-Y" src="images/vase.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+
+    <td class="capital-text">Z</td>
+    <td><div id="drop-Z" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    <td><img id="img-Z" src="images/tree.jpg" class="activity-img" draggable="true" ondragstart="drag(event)" /></td>
+  </tr>
+</table>
+
+
+<!-- Footer -->
+  <div class="footer-basic">
+    <footer>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="index.html" class="fa fa-home"> Home</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="FAQs.html" class="fa fa-question-circle-o"> FAQs</a>
+        </li>
+        <li class="list-inline-item" id="ContactUs">
+          Contact Us:
+        </li>
+        <li class="list-inline-item">
+          <a href="mailto:tutoringsimplified101@gmail.com" class="fa fa-envelope-o"> Email</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/tutoringsimplified/" class="fa fa-instagram"> Instagram</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="tel:+971556703700" class="fa fa-phone"> Phone</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>

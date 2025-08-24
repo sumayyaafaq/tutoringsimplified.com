@@ -1,0 +1,307 @@
+<html lang="en">
+<head>
+<title>English Quiz sheet</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+      .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .activity-button {
+      background-color: #265DD1;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .activity-button:hover {
+      background-color: #1b48a0;
+    }
+
+    
+    @media (max-width: 600px) {
+      .activity-button {
+        font-size: 16px;
+        padding: 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body><div class="header"><img src="images/logoo.png" alt="Tutoring Simplified logo" style="height: 150px;" /></div>
+<div class="topnav">
+  <div class="topnav-left">
+    <a href="index.html" class="active">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Worksheet Generator</button>
+      <div class="dropdown-content">
+        <a href="englishW.html">English</a>
+        <a href="mathsW.html">Mathematics</a>
+        <a href="arabicW.html">Arabic</a>
+        <a href="urduW.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Activity Generator</button>
+      <div class="dropdown-content">
+        <a href="englishA.html">English</a>
+        <a href="mathsA.html">Mathematics</a>
+        <a href="arabicA.html">Arabic</a>
+        <a href="urduA.html">Urdu</a>
+      </div>
+    </div>
+
+    
+    <div class="dropdown">
+      <button class="dropbtn">Quiz Generator</button>
+      <div class="dropdown-content">
+        <a href="englishQ.html">English</a>
+        <a href="mathsQ.html">Mathematics</a>
+        <a href="arabicQ.html">Arabic</a>
+        <a href="urduQ.html">Urdu</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Reader</button>
+      <div class="dropdown-content">
+        <a href="files/englishreader.pdf">English</a>
+        <a href="files/arabicreader.pdf">Arabic</a>
+        <a href="files/urdureader.pdf">Urdu</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="topnav-right">
+    <a href="#ContactUs">Contact Us</a>
+    <a href="FAQs.html">FAQs</a>
+  </div>
+</div>
+<h2 style="text-align:center;">Drag and Drop Activities (A–E)</h2> 
+
+<div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+
+  <!-- Small Letter Matching -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="text-align:center;">Match Small Letters to Capital</h3>
+    <table>
+      <tr><th>Capital</th><th>Drop</th><th>Small Letter</th></tr>
+
+      <tr>
+        <td class="capital-text">A</td>
+        <td><div id="div1" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag3" src="images/c1.png" class="activity-img" alt="c" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">B</td>
+        <td><div id="div2" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag5" src="images/e1.png" class="activity-img" alt="e" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">C</td>
+        <td><div id="div3" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag1" src="images/a1.png" class="activity-img" alt="a" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">D</td>
+        <td><div id="div4" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag2" src="images/b1.png" class="activity-img" alt="b" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">E</td>
+        <td><div id="div5" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag4" src="images/d1.png" class="activity-img" alt="d" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+    </table>
+      </div>
+
+  <!-- Picture Matching -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="text-align:center;">Match Pictures to Letters</h3>
+    <table>
+      <tr><th>Letter</th><th>Drop</th><th>Picture</th></tr>
+
+      <tr>
+        <td class="capital-text">A</td>
+        <td><div id="box1" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag7" src="images/ball.png" class="activity-img" alt="ball" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">B</td>
+        <td><div id="box2" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag9" src="images/dog.jpg" class="activity-img" alt="dog" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">C</td>
+        <td><div id="box3" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag10" src="images/eye.png" class="activity-img" alt="eye" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">D</td>
+        <td><div id="box4" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag8" src="images/cat.png" class="activity-img" alt="cat" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+      <tr>
+        <td class="capital-text">E</td>
+        <td><div id="box5" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+        <td><img id="drag6" src="images/apple.png" class="activity-img" alt="apple" draggable="true" ondragstart="drag(event)" /></td>
+      </tr>
+    </table>
+      </div>
+</div>
+<!-- Results -->
+<div style="text-align:center; margin-top: 30px;">
+  <p><strong>Letter Matching Score:</strong> <span id="result1">0</span>/5</p>
+  <p><strong>Image Matching Score:</strong> <span id="result2">0</span>/5</p>
+  <p><strong>Total Score:</strong> <span id="totalResult" style="font-weight:bold;">0</span>/10</p>
+</div>
+
+<!-- Submit Button -->
+<div style="text-align:center; margin-top: 20px;">
+  <button class="activity-button" onclick="checkBoth()">Submit</button>
+</div>
+
+
+
+<!-- Drag and Drop Script -->
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  const dragged = document.getElementById(data);
+  if (ev.target.classList.contains("drop-zone")) {
+    ev.target.innerHTML = '';
+    ev.target.appendChild(dragged);
+  }
+}
+
+function checkAnswers1() {
+  const correct = {
+    div1: "a",
+    div2: "b",
+    div3: "c",
+    div4: "d",
+    div5: "e"
+  };
+  let score = 0;
+  Object.keys(correct).forEach(divId => {
+    const box = document.getElementById(divId);
+    const img = box.querySelector("img");
+    box.style.border = "2px solid";
+    if (img && img.alt.toLowerCase() === correct[divId]) {
+      box.style.borderColor = "green";
+      score++;
+    } else {
+      box.style.borderColor = "red";
+      if (!box.querySelector(".correct")) {
+        const span = document.createElement("span");
+        span.innerText = ` ✅ ${correct[divId]}`;
+        span.className = "correct";
+        span.style.marginLeft = "10px";
+        span.style.color = "blue";
+        box.appendChild(span);
+      }
+    }
+  });
+  document.getElementById("result1").innerText = score;
+  return score;
+}
+
+function checkAnswers2() {
+  const correct = {
+    box1: "apple",
+    box2: "ball",
+    box3: "cat",
+    box4: "dog",
+    box5: "eye"
+  };
+  let score = 0;
+  Object.keys(correct).forEach(divId => {
+    const box = document.getElementById(divId);
+    const img = box.querySelector("img");
+    box.style.border = "2px solid";
+    if (img && img.alt.toLowerCase() === correct[divId]) {
+      box.style.borderColor = "green";
+      score++;
+    } else {
+      box.style.borderColor = "red";
+      if (!box.querySelector(".correct")) {
+        const span = document.createElement("span");
+        span.innerText = ` ✅ ${correct[divId]}`;
+        span.className = "correct";
+        span.style.marginLeft = "10px";
+        span.style.color = "blue";
+        box.appendChild(span);
+      }
+    }
+  });
+  document.getElementById("result2").innerText = score;
+  return score;
+}
+
+function checkBoth() {
+  const s1 = checkAnswers1();
+  const s2 = checkAnswers2();
+  const total = s1 + s2;
+  document.getElementById("totalResult").innerText = total;
+
+  if (total === 10) {
+    confetti({
+      particleCount: 5000,
+      spread: 1000,
+      origin: { y: 0.6 }
+    });
+  }
+}
+</script>
+
+<!-- Footer -->
+  <div class="footer-basic">
+    <footer>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="index.html" class="fa fa-home"> Home</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="FAQs.html" class="fa fa-question-circle-o"> FAQs</a>
+        </li>
+        <li class="list-inline-item" id="ContactUs">
+          Contact Us:
+        </li>
+        <li class="list-inline-item">
+          <a href="mailto:tutoringsimplified101@gmail.com" class="fa fa-envelope-o"> Email</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/tutoringsimplified/" class="fa fa-instagram"> Instagram</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="tel:+971556703700" class="fa fa-phone"> Phone</a>
+        </li>
+      </ul>
+    </footer>
+</body>
+</html>
+	 
